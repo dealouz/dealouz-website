@@ -34,13 +34,10 @@ jobs:
 
       - name: 📝 Modify package.json
         run: |
-          cat .output/server/package.json
           mv .output/server/package.json .output/package.json
           cat .output/package.json
-          jq '{name: .name, version: .version, private: .private, dependencies: .bundledDependencies}' .output/package.json > .output/temp.json
-          cat .output/temp.json
-          mv .output/temp.json .output/package.json
-          cat .output/package.json
+          echo $PATH
+          
 
       - name: 📝 Create server.js
         run: echo "import('./server/index.mjs');" > .output/server.js
