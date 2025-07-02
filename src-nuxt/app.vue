@@ -1,5 +1,5 @@
 <template>
-  <Html class="overscroll-none bg-gray-700">
+  <Html class="bg-light-600 font-sans">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>

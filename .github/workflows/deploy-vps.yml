@@ -62,4 +62,4 @@ jobs:
           script: |
             cd ${{ env.APP_DIR }}/html/.output
             npm install
-            pm2 restart dealouz.com || PORT=6400 pm2 start server.js --name dealouz.com
+            pm2 restart dealouz.com || PORT=6400 NITRO_PORT=6400 pm2 start server.js --name dealouz.com

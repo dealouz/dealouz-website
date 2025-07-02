@@ -1,4 +1,3 @@
-import { _light } from '#tailwind-config/theme/fontWeight'
 import type { Config } from 'tailwindcss'
 
 /** @type {import('tailwindcss').Config} */
@@ -30,8 +29,8 @@ export default <Partial<Config>>{
       '4xl': '2560px',
     },
     fontFamily: {
-      sans: 'Poppins, Rubik',
-      serif: 'Poppins, Rubik',
+      sans: 'Nunito, Poppins, Rubik',
+      serif: 'Nunito, Poppins, Rubik',
     },
     extend: {
       keyframes: {
@@ -53,16 +52,18 @@ export default <Partial<Config>>{
           400: '#35424D',
           500: '#1B232D',
           600: '#3D4E5C',
-          700: '#101623',
+          700: '#1e110c',
         },
         light: {
           300: 'rgba(255, 255, 255, 0.3)',
           400: '#F5F4FB',
+          500: '#fff4d9',
+          600: '#FEFAF0',
           700: 'rgba(255, 255, 255, 0.7)',
         },
         primary: {
-          300: '#BDB3FF',
-          400: '#8472F3',
+          300: '#fdb040',
+          400: '#e76213',
           500: '#6B59D9',
         },
         red: '#EC364B',

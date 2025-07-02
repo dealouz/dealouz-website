@@ -90,6 +90,8 @@ export default defineNuxtConfig({
 
   googleFonts: {
     families: {
+      Rubik: true,
+      Nunito: true,
       Poppins: true,
     },
   },
